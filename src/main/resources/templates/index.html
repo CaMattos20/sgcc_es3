@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="fragments/default :: head">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<div th:insert="fragments/default :: header"></div>
+	
+	<div class="container main-container">
+		<div th:insert="fragments/default :: title (message = 'Bem-vindo')"></div>
+		
+		<div class="container col-sm-8 text-center">
+			Bem-vindo ao Sistema de Gerenciamento de Condomínio Comercial!
+		</div>
+	</div>
+	
+	<div th:insert="fragments/default :: js"></div>
+</body>
+</html>
